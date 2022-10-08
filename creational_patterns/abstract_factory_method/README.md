@@ -1,9 +1,9 @@
 # Abstract factory
 ## Intent
-- *Abstract Factory* is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
+- **Abstract Factory**is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
 ## Idea
 - The first thing the Abstract Factory pattern suggests is to explicitly declare interfaces for each distinct product of the product family. Then you can make all variants of products follow those interfaces. 
-- The next move is to delcare the `Abstract Factory`- an inteface with a list of creation methods for all products that are part of the product family. These method must return *abstract* product types represented by the interfaces we extracted previously and so on.
+- The next move is to delcare the `Abstract Factory`- an inteface with a list of creation methods for all products that are part of the product family. These method must return **abstract** product types represented by the interfaces we extracted previously and so on.
 - For each variant of a product family, we create a separate factory class based on the `AbstractFactory` interface. A factory is a class that returns products of a particular kind.
 - The client code has to work with both factories and products via their respective abstract interfaces. This let you can change the type of a factory that you pass to the client code, as well as the product variant that the client code receives, withou breaking the actual client code.
 - There's one more thing left to clarify: if the client is only exposed to the abstract interfaces, what creates the actual factory objects? Usually, the application creates a concrete factory object at the initialization stage. Just before that, the app must select the factory type depeding on the configuration or the environment settings.

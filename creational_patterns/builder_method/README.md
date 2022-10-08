@@ -1,6 +1,6 @@
 # Builder
 ## Intent
-- *Builder* is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
+- **Builder** is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
 ## Idea
 - The builder pattern suggests that you extract the object construction code out of its own class and move it to separate objects called builder
 - The pattern organizes object construction into a set of setps. To create an object, you execute a series of these steps on a builder object.
