@@ -22,8 +22,8 @@
     - Create senders, and associate them with specific commands.
 ## Pros and Cons
 ### Pros
-- Single Responsibility Principle. You can decouple classes that invoke operations from classes that perform these operations.
-- Open/Closed Principle. You can introduce new commands into the app without breaking existing client code.
+- *Single Responsibility Principle*. You can decouple classes that invoke operations from classes that perform these operations.
+- *Open/Closed Principle*. You can introduce new commands into the app without breaking existing client code.
 - You can implement undo/redo.
 - You can implement deferred execution of operations.
 - You can assemble a set of simple commands into a complex one.
